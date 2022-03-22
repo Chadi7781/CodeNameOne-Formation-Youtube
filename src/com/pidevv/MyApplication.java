@@ -14,6 +14,7 @@ import java.io.IOException;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.io.NetworkEvent;
 import com.mycompany.gui.AjoutReclamationForm;
+import com.mycompany.gui.MapForm;
 import com.mycompany.gui.SignInForm;
 import com.mycompany.gui.SignUpForm;
 import com.mycompany.gui.StatistiquePieForm;
@@ -51,12 +52,12 @@ public class MyApplication {
     }
     
     public void start() {
-        if(current != null){
+        if(current != null){    
             current.show();
             return;
         }
         //houni awl interface yet7al
-        new StatistiquePieForm(theme).show(); //n7oto signup bch yjibha awl form
+        new MapForm(); //n7oto signup bch yjibha awl form
        // new SignInForm(theme).show();
     }
 
